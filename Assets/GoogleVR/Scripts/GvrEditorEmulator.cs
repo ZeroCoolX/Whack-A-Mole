@@ -184,8 +184,9 @@ public class GvrEditorEmulator : MonoBehaviour
         {
             return false;
         }
+        return true;//Input.GetButton("Fire1") || Input.GetKey(KeyCode.RightAlt);
 
-        return Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt);
+        //return Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt);
     }
 
     private bool CanChangeRoll()
