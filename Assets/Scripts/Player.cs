@@ -2,6 +2,8 @@
 
 public class Player : MonoBehaviour {
 
+    public int Score;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,6 +16,7 @@ public class Player : MonoBehaviour {
             if(hit.transform.tag == "Mole") {
                 print("Mole [" + hit.transform.gameObject.GetInstanceID() + "] hit");
                 if (Input.GetKeyDown(KeyCode.Space)) {
+                    Score += hit.transform.GetComponent<Mole>().GetMoleReward;
                     hit.transform.GetComponent<Mole>().HideMole();
                 }
             }
