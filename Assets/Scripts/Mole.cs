@@ -8,8 +8,8 @@ public class Mole : MonoBehaviour {
 
     private int _reward;
 
-    private float _hiddenHeight = 0.442f;
-    private float _visibleHeight = 1.23f;
+    private float _hiddenHeight = 0.178f;//0.442f;
+    private float _visibleHeight = 0.657f;//1.23f;
     private Vector2 _hideDurationRange = new Vector2(1.25f, 3f);
     private float _timeToHide;
 

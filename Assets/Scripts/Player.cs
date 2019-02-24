@@ -2,6 +2,7 @@
 
 public class Player : MonoBehaviour {
 
+    public Hammer Hammer;
     public int Score;
 
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.Space)) {
                     Score += hit.transform.GetComponent<Mole>().GetMoleReward;
                     hit.transform.GetComponent<Mole>().HideMole();
+                    Hammer.HitMole(hit.transform.position);
                 }
             }
         }
